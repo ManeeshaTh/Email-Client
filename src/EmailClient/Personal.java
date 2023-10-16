@@ -3,13 +3,13 @@ package EmailClient;
 public class Personal extends Recipient implements BDayGreetable{
     private String nickname;
     private String email;
-    private String DOB;
+    private String DOB;  //LocalDate DOB
 
     public Personal( String name, String nickname, String email, String DOB){
         super(name);
         this.nickname = nickname;
         this.email = email;
-        this.DOB = DOB;
+        this.DOB = DOB;  
     }
 
     public String getNickname() {
